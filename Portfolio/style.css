@@ -1,0 +1,516 @@
+#import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+#import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url(./imgs/pic1.jpg);
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgba(223, 218, 218);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: rgb(202, 9, 128); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.moreAbout {
+    font-size: 20px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devPic img {
+    height: 58vh;
+}
+
+
+
+/* ################# Contact Form Styling ############## */
+.contactform {
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 10px 90px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    /* padding: 12px 0; */
+}
+
+.contactform form div {
+    padding: 8px 0;
+}
+
+.contactform form div input {
+    width: 280px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+.form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.btn-sm:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn-sm {
+    margin-top: 5px !important;
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    width: 110px;
+}
+
+/* ############### Blog styling ################# */
+.blogItem {
+    margin: 24px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogContainer {
+    margin: 10px 90px;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro {
+
+    margin: 10px 90px;
+}
+
+.intro h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px 12px;
+}
+
+.intro p {
+    margin: 12px 12px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill {
+    width: 256px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 256px;
+}
+
+.fifty {
+    width: 175px;
+    background-color: chartreuse;
+}
+
+.t5 {
+    width: 75px;
+    background-color: green;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.hamb {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+.pic-border {
+    border: 2px solid black;
+    border-radius: 70%;
+}
+
+
+/* ################ Services ############## */
+body {
+    margin-top: 20px;
+}
+
+/* --------------------------------------------
+    ICON LIST
+-------------------------------------------- */
+
+ul.i-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul.i-list .list-title {
+    display: inline-block;
+    position: absolute;
+}
+
+ul.i-list li {
+    padding: 2px 0px;
+}
+
+ul.i-list i.fa {
+    margin-right: 7px;
+}
+
+ul.i-list .list-item {
+    margin-top: 3px;
+    display: inline-block;
+}
+
+ul.i-list.filled i.fa {
+    color: white;
+    font-size: 9px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+ul.e-icon-list.filled li {
+    padding: 2px 0px;
+    line-height: 24px;
+}
+
+ul.i-list.underline li {
+    padding: 6px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+ul.i-list.medium li {
+    padding-bottom: 25px;
+    position: relative;
+}
+
+ul.i-list.medium .icon {
+    margin-right: 25px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 68px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .28);
+    position: relative;
+    z-index: 1;
+    /*background-image: url(../img/crease.svg) !important;
+   -moz-background-size: 100% 100% !important;
+   background-size: 100% 100% !important;
+   background-position: center center !important;*/
+}
+
+ul.i-list.medium .icon i.fa {
+    margin: 0;
+}
+
+ul.i-list.medium.bordered .icon {
+    background: white;
+    color: inherit;
+    border: 2px solid #8fc135;
+    font-size: 26px;
+    color: #8fc135;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .28);
+}
+
+ul.i-list.medium .list-item {
+    text-transform: uppercase;
+}
+
+ul.i-list.large .icon {
+    margin-right: 30px;
+    background: #d0d0d0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .28);
+}
+
+ul.i-list.large .icon i.fa {
+    margin: 0;
+}
+
+ul.i-list.large.bordered .icon {
+    background: inherit;
+    color: inherit;
+    border: 2px solid #8fc135;
+    font-size: 30px;
+    color: #8fc135;
+}
+
+ul.i-list.large .list-item {
+    text-transform: uppercase;
+}
+
+ul.i-list .icon {
+    float: left;
+}
+
+ul.i-list.right {
+    text-align: right;
+}
+
+ul.i-list.right .icon {
+    float: right;
+}
+
+ul.i-list.right .icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+ul.i-list.large.right .icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+ul.i-list.large li {
+    margin-bottom: 25px;
+}
+
+ul.i-list .icon-content {
+    overflow: hidden;
+}
+
+ul.i-list .icon-content .title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.left-line .iconlist-timeline {
+    left: auto;
+    right: 35px;
+}
+
+.iconlist-timeline {
+    position: absolute;
+    top: 1%;
+    left: 32px;
+    width: 1px;
+    height: 99%;
+    border-right-width: 1px;
+    border-right-style: dashed;
+    height: 100%;
+    border-color: #ccc;
+}
+
+.icon {
+    background-color: #0cb4ce;
+}
+
+separator,
+.testimonial-two,
+.exp-separator-inner {
+    border-color: #0cb4ce;
+}
+
+.exp-separator {
+    border-color: #0cb4ce;
+    border-top-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    width: 100%;
+    max-width: 55px;
+    border-top-style: solid;
+    height: auto;
+    clear: both;
+    position: relative;
+    z-index: 11;
+}
+
+.section-sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 0.45em;
+    margin-bottom: 0.35em;
+    color: #303133;
+    font-family: Poppins;
+    letter-spacing: -0.02em;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.center-separator .exp-separator-inner,
+.center-separator.exp-separator {
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-big{
+    margin-left: 15em;
+}
+
+/* ############ Responsive Styling ############ */
+@media (max-width:630px) {
+    * {
+        /* background-color: rgba(100, 88, 88, 0.6); */
+    }
+
+    
+    .section-big{
+        margin-left: 2em;
+    }
+    /* .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+    .devPic {
+        display: none;
+    }
+
+    .intro,
+    .blogContainer,
+    .contactform {
+        margin: 50px 8px;
+    }
+}
+
+
